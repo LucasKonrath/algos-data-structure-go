@@ -1,6 +1,4 @@
-package doublylinkedlist
-
-import "fmt"
+package stack
 
 type Stack struct {
 	items []int
@@ -19,17 +17,18 @@ func (s *Stack) Pop() (int, bool) {
 	return item, true
 }
 
+func (s *Stack) Peek() (int, bool) {
+	if len(s.items) == 0 {
+		return 0, false
+	}
+	item := s.items[len(s.items)-1]
+	return item, true
+}
+
 func (s *Stack) isEmpty() bool {
 	return len(s.items) == 0
 }
 
-func main() {
-	stack := &Stack{}
-	stack.Push(1)
-	stack.Push(2)
-	stack.Push(3)
-	for !stack.isEmpty() {
-		item, _ := stack.Pop()
-		fmt.Println(item)
-	}
+func (s *Stack) size() int {
+	return len(s.items)
 }
