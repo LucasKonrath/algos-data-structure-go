@@ -29,7 +29,7 @@ func main() {
 	stack.Push(2)
 	stack.Push(3)
 	for !stack.isEmpty() {
-		item, _ := stack.Pop()q
+		item, _ := stack.Pop()
 		fmt.Println(item)
 	}
 }
