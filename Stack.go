@@ -1,4 +1,4 @@
-package main
+package doublylinkedlist
 
 import "fmt"
 
@@ -29,7 +29,7 @@ func main() {
 	stack.Push(2)
 	stack.Push(3)
 	for !stack.isEmpty() {
-		item, _ := stack.Pop()
+		item, _ := stack.Pop()q
 		fmt.Println(item)
 	}
 }
