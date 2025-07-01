@@ -1,5 +1,7 @@
 # Data Structures & Algorithms With Golang 101
 
+![Build Status](https://github.com/LucasKonrath/algos-data-structures-go/actions/workflows/go.yml/badge.svg)
+
 This repository is dedicated to studying and practicing the concepts from the book **Data Structures & Algorithms With Golang 101 (English Edition)** by Aarav Joshi. It contains Go implementations of the data structures and algorithms presented in the book, along with unit tests and example usages.
 
 ## Structure
@@ -40,4 +42,3 @@ This repository is for personal study and reference. If you find issues or want 
 ---
 
 Happy coding and learning!
-
